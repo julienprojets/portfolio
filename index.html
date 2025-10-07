@@ -57,7 +57,6 @@
       max-height: 500px;
       opacity: 1;
     }
-
   </style>
 </head>
 <body class="bg-gray-50">
@@ -86,6 +85,7 @@
           <a href="#competences" class="text-gray-700 hover:text-blue-600 transition-colors">Compétences</a>
           <a href="#projets" class="text-gray-700 hover:text-blue-600 transition-colors">Projets</a>
           <a href="#veille" class="text-gray-700 hover:text-blue-600 transition-colors">Veille Tech</a>
+          <a href="#tableau" class="text-gray-700 hover:text-blue-600 transition-colors">Tableau</a>
           <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
         </div>
 
@@ -106,6 +106,7 @@
         <a href="#competences" class="text-gray-700 hover:text-blue-600 transition-colors">Compétences</a>
         <a href="#projets" class="text-gray-700 hover:text-blue-600 transition-colors">Projets</a>
         <a href="#veille" class="text-gray-700 hover:text-blue-600 transition-colors">Veille Tech</a>
+        <a href="#tableau" class="text-gray-700 hover:text-blue-600 transition-colors">Tableau</a>
         <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
       </div>
     </div>
@@ -115,9 +116,10 @@
   <section id="accueil" class="min-h-screen flex items-center justify-center">
     <div class="text-center">
       <h1 class="text-5xl font-bold text-gray-800 mb-4">Bienvenue sur mon Portfolio</h1></br></br>
-      <a href="#apropos" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+      <a href="#apropos" class="bg-gray-600 text-white px-8 py-3 rounded-lg hover:bg-black transition-colors">
         Découvrir mon profil
       </a>
+
     </div>
   </section>
 
@@ -230,9 +232,12 @@
                                 <p class="text-gray-700">• MySQL</p>
                                 <p class="text-gray-700">• Trello</p>
                             </div>
-
                         </div>
-                        <!-- Add more courses as needed -->
+                        <!--college-->
+                        <div class="border-l-4 border-green-500 pl-6">
+                            <h4 class="font-semibold text-lg">GCE AS & A Level</h4>
+                            <p class="text-gray-600">SAINT MARY’S COLLEGE • 2015-2022</p></br>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -342,24 +347,69 @@
     <!-- Veille Tech Section -->
     <section id="veille" class="min-h-screen py-20 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Veille Technologique</h2>
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Veille Technologique - JavaScript</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Google Alerts -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4 text-center">Google Alerts</h3>
+                    <p class="text-gray-600 text-sm">
+                        Je reçois des alertes hebdomadaires par email à propos des dernières nouveautés sur JavaScript via Google Alerts. Cela me permet de rester informé des actualités, mises à jour de frameworks et tendances du langage.
+                    </p>
+                    <ul class="mt-4 text-gray-500 text-sm list-disc list-inside">
+                        <li>Alertes configurées sur les mots-clés : "JavaScript", "JavaScript Programming".</li>
+                        <li>Courriel pour voir les alertes : <br>
+                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="text-blue-500 underline">Nouveautés JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Flux RSS -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4 text-center">Flux RSS</h3>
+                    <p class="text-gray-600 text-sm">
+                        J’utilise des lecteurs de flux RSS comme Feedly pour suivre des blogs et des sites spécialisés en JavaScript.
+                    </p>
+                    <ul class="mt-4 text-gray-500 text-sm list-disc list-inside">
+                        <li>Flux suivis : 
+                            <ul class="ml-4 list-disc">
+                                <li><a href="https://javascriptweekly.com/rss" target="_blank" class="text-blue-500 underline">JavaScript Weekly</a></li>
+                                <li><a href="https://2ality.com/" target="_blank" class="text-blue-500 underline">2ality (Axel Rauschmayer)</a></li>
+                                <li><a href="https://frontendfoc.us/rss" target="_blank" class="text-blue-500 underline">Frontend Focus</a></li>
+                            </ul>
+                        </li>
+                        <li>Lecture régulière via l’application <strong>Feedly</strong>.</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletters -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4 text-center">Newsletters</h3>
+                    <p class="text-gray-600 text-sm">
+                        Je suis abonné à plusieurs newsletters hebdomadaires qui traitent de JavaScript, des frameworks récents, et de l'écosystème.
+                    </p>
+                    <ul class="mt-4 text-gray-500 text-sm list-disc list-inside">
+                        <li><a href="https://javascriptweekly.com/" target="_blank" class="text-blue-500 underline">JavaScript Weekly</a> – chaque vendredi</li>
+                        <li><a href="https://bytes.dev/" target="_blank" class="text-blue-500 underline">Bytes.dev</a> – humour + infos JS modernes</li>
+                        <li><a href="https://jsmastery.com/" target="_blank" class="text-blue-500 underline">Node Weekly</a> – pour l’écosystème Node.js</li>
+                        <li>Lien vers le courriel : <br>
+                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="text-blue-500 underline">Newsletter Javascript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tableau de Synthese Section -->
+    <section id="tableau" class="min-h-screen py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Tableau de Synthèse</h2>
             <div class="bg-white p-8 rounded-lg shadow-md min-h-96">
                 <p class="text-gray-600 text-center">
-                    [Grand espace réservé pour votre contenu de veille technologique - articles, analyses, tendances, etc.]
+                    [espace réservé pour le tableau de synthese]
                 </p>
-                <!-- This space is intentionally large for future content -->
-                <div class="mt-8 space-y-6">
-                    <!-- Placeholder for future content -->
-                    <div class="border-2 border-dashed border-gray-300 p-8 rounded-lg text-center text-gray-500">
-                        Espace pour vos articles de veille
-                    </div>
-                    <div class="border-2 border-dashed border-gray-300 p-8 rounded-lg text-center text-gray-500">
-                        Espace pour vos analyses technologiques
-                    </div>
-                    <div class="border-2 border-dashed border-gray-300 p-8 rounded-lg text-center text-gray-500">
-                        Espace pour vos découvertes et tendances
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -433,15 +483,9 @@
                24 5.87 18.63.5 12 .5z" />
         </svg>
       </a>
-
     </div>
   </div>
 </footer>
-
-
-
-
-
 
   <script>
     // Smooth scroll
